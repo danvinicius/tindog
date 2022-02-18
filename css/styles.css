@@ -1,0 +1,431 @@
+/*BODY*/
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #666;
+    padding: 0;
+    line-height: 1.8;
+}
+/*TERMINA BODY*/
+
+
+/*HEADER*/
+.hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background-color: #444444;
+    
+    padding: 150px 60px 80px;
+    box-sizing: border-box;
+    background-position: left top;
+    background-size: auto, cover;
+    text-align: right;
+}
+
+.hero-title {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .5);
+}
+
+.hero-title strong {
+    color: white;
+    font-weight: normal;
+}
+
+.hero-title-link {
+    color: inherit; /*ele herda a mesma cor do elemento pai (hero-title)*/
+}
+
+.hero-title-link:hover {
+    color: #49bf9d;
+}
+
+.hero-img {
+    border-radius: 50% 50%;
+    overflow: hidden;
+}
+/*TERMINA A HEADER*/
+
+
+/*MAIN CONTENT*/
+.main-content {
+    margin-left: 35%;
+    width: 65%;
+    padding: 100px 60px 80px;
+    box-sizing: border-box;
+}
+a {
+    transition: color .2s linear, border-bottom-color .2s linear;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color: #49bf9d;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+}
+
+p {
+    margin: 0 0 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #787878;
+    font-weight: normal;
+    margin: 1em 0; /*o em é uma medida proporcional ao tamanho da fonte*/
+}
+
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 26px;
+}
+h4 {
+    font-size: 22px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 12px;
+}
+
+
+
+sub, sup {
+    font-size: 12px;
+}
+
+blockquote {
+    border-left: 5px solid #ddd;
+    margin: 2em 0;
+    padding: .5em 0 .5em 1.5em;
+    font-style: italic;
+}
+
+blockquote p {
+    margin-bottom: 0;
+}
+
+q {
+    border-left: 5px solid #ddd;
+    margin: 2em 0;
+    padding: .5em 0 .5em 1.5em;
+    font-style: italic;
+}
+
+code {
+    border-radius: .35em;
+    border: 1px solid #efefef;
+    background-color: #f7f7f7;
+    font-size: 0.9em;
+    padding: 0.25em 0.65em;
+    font-family: "Courier New", monospace,sans-serif; /*essas são fontes de codificação*/
+    color: #929292;
+}
+
+pre code {
+    display: block;
+}
+/*TERMINA MAIN CONTENT*/
+
+
+/*IMAGENS*/
+img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.img-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.img-right {
+    float: right;
+    margin-left: 10px;
+}
+
+.align-left {
+    text-align: justify;
+}
+
+
+.img-link {
+    border: 0;
+
+}
+
+.gallery-thumb img {
+    margin-bottom: 2%
+}
+
+
+.gallery-img img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*TERMINA IMAGENS*/
+
+
+/*DIVS DE LINHAS E COLUNAS*/
+.col1-3:nth-child(3n - 1) {
+    margin: 0 2%;
+}
+
+.row {
+    overflow: auto;
+}
+
+.col1 {
+    width: 50%;
+    display: inline-block;
+}
+
+.col2 {
+    width: 49%;
+    float: left;
+}
+
+.col2:first-child {
+    margin-right: 1%;
+}
+
+.col2:last-child {
+    margin-left: 1%;
+}
+
+.col2-3 {
+    width: 64%;
+    float: left;
+}
+
+.col1-3 {
+    width: 32%;
+    float: left;
+}
+/*TERMINA DIVS DE LINHAS E COLUNAS*/
+
+
+/*LISTAS*/
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+li {
+    padding-left: 1em;
+}
+
+.ul-alternate {
+    list-style: none;
+}
+
+.ul-alternate li {
+    border-bottom: 2px solid #d8d8d8;
+    padding-left: 0;
+}
+
+.ul-alternate li:last-child /*Somente a última ul (filho) da lista*/ {
+    border: 0;
+}
+
+.ul-icons {
+    padding-left: 0;
+    list-style: none;
+}
+
+.ul-icons li {
+    display: inline-block;
+    color: #49bf9d;
+    font-size: 1.5em;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: block; /*essas configs fazem um elemento ficar invisível mas permite ser ouvido por leitores de tela*/
+    /*o display:none e o visibility:hidden fazem o elemento passar batido pelos leitores de tela*/
+}
+/*TERMINA LISTAS*/
+
+
+/*FORMULÁRIOS*/
+input, label, textarea, select {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea, select {
+    background-color: #ccc;
+    padding: 1.5em .5em;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin-bottom: 15px;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: auto;
+}
+
+input:focus, textarea:focus {
+    outline: none; /*o outline tira a borda padrão do browser*/
+    border: 2px solid #49bf9d;
+}
+
+textarea {
+    height: 10em;
+}
+/*TERMINA FORMULÁRIOS*/
+
+
+/*BOTÕES*/
+.button-default {
+    display: inline-block;
+    background-color: #49bf9d;
+    border: 3px solid #49bf9d;
+    color: white;
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: auto;
+    transition: all .3s;
+    cursor: pointer; /*muda o cursor*/
+}
+
+
+.button-default-stroke {
+    background-color: white;
+    border: 3px solid #efefef;
+    color: inherit;
+    width: auto;
+}
+
+.button-default:hover {
+    background-color: #5ddeb9;
+    border: 3px solid transparent;
+}
+
+.button-default-stroke:hover {
+    border-color: #49bf9d;
+    color: #49bf9d;
+    background-color: white;
+}
+
+.button-default-small {
+    font-size: 0.6em;
+}
+
+.button-default-big {
+    font-size: 1em;
+}
+
+.button-default-full {
+    display: block;
+    width: 88%;
+    margin-bottom: 20px;
+}
+/*TERMINA BOTÕES*/
+
+
+/*TABELAS*/
+.table {
+    width: 100%;
+    margin: 0 0 0 2em;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table td {
+    padding: .75em;
+}
+
+.table th {
+    background-color: #ccc;
+    padding: .75em;
+}
+
+.table tbody tr {
+    border-bottom: 2px solid #ddd;
+}
+
+.table tbody tr:first-child {
+    border-top: 2px solid #777;
+}
+
+
+.table tbody tr:last-child {
+    border-bottom: 2px solid #777;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #eee; /*o nth-child pega o enésimo filho e dps especifica qual/quais filhos*/
+}
+
+.table-alternate th {
+    background-color: transparent;
+}
+
+.table-alternate tbody td, .table-alternate tbody tr:first-child, .table-alternate tbody tr:last-child {
+    border: 1px solid #ddd;
+}
+/*TERMINA TABELAS*/
+
+
+/*RODAPÉ*/
+.main-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 35%;
+    padding: 0 54px 72px 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.main-footer .icon-link {
+    color: rgba(255, 255, 255, .5);
+    border-bottom-color: transparent;
+    transition: color .2s linear;
+}
+
+.main-footer .icon-link:hover {
+    color: #49bf9d;
+}
+
+.main-footer .copyright {
+    list-style-type: none;
+}
+
+.main-footer .copyright li {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.main-footer .copyright li a {
+    transition: color .2s linear, border-bottom-color .2s linear;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color: inherit;
+}
+
+.main-footer .copyright a:hover {
+    color: #49bf9d;
+    border-bottom-color: transparent;
+}
+/*TERMINA O RODAPÉ*/
+
+
+
+
